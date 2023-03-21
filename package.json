@@ -1,0 +1,28 @@
+{
+  "name": "rewardsservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "container:clean": "echo hello",
+    "container:build": "npm run container:clean docker build -t rewards-service ./",
+    "container:run": "docker run rewards-service"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.25.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/tofo/bf-reward.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/tofo/bf-reward/issues"
+  },
+  "homepage": "https://gitlab.com/tofo/bf-reward#readme",
+  "description": ""
+}
